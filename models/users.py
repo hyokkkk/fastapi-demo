@@ -8,7 +8,7 @@ class User(BaseModel):
     events: Optional[List[Event]]
 
     class Config:
-        json_schema_extra = {
+        schema_extra = {
             "example": {
                 "email": "fastapi@packt.com",
                 "username": "string!!!!",
@@ -21,7 +21,7 @@ class UserSignIn(BaseModel):
     password: str
 
     class Config:
-        json_schema_extra = {
+        schema_extra = {
             "example": {
                 "email": "fastapi@packt.com",
                 "username": "string!!!!",
